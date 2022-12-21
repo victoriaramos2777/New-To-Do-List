@@ -1,7 +1,6 @@
 //importar de nuestro modulos
-import Items from "./modules/add-remove.js";
-import ToDoItem from "./modules/item-constructor.js";
-
+import Items from "../modulos js/add-remove.js";
+import ToDoItem from "../modulos js/item-constructor.js";
 //constantes iniciales  
 const main = document.getElementById('todo-item');
 const form = document.getElementById('form');
@@ -34,4 +33,12 @@ if(e.key === 'Enter' && description != '') {
     Items.clearInput();
   }
 });
+
+// Evento de escucha para remover elementos
+itemsContainer.addEventListener('click', (e) => {
+    // Remover Elemento
+    if(e.target.classList.contains('remove')){
+      Items.removeItem(e.target);
+    }
+  });
 

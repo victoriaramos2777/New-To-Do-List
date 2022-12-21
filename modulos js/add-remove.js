@@ -1,8 +1,8 @@
 //contenedor de items
 const itemsContainer =document.getElementById('todo-items');
-const inputDescription = documen.getElementById ('todo-item');
+const inputDescription = document.getElementById ('todo-item');
 
-class Item {
+class Items {
     static displsyItems(){
 
     }
@@ -32,4 +32,4 @@ class Item {
       }
 }
 
-expot default Items;
+export default Items;
