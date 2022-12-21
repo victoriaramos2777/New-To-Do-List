@@ -1,0 +1,183 @@
+/*
+  Variables
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 25px 1px hsl(236deg, 9%, 61%);
+  box-shadow: 0px 0px 25px 1px hsl(236deg, 9%, 61%);
+}
+
+/*
+  Header Styles
+*/
+body {
+  background: url("../images/bg-mobile-light.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #f6f6f8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 2.4rem 1.4rem;
+}
+.header__title {
+  letter-spacing: 0.7rem;
+  color: hsl(0deg, 0%, 98%);
+}
+
+::placeholder {
+  font-size: 1rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  background-color: hsl(0deg, 0%, 98%);
+  border-radius: 0.4rem;
+  margin: 0 auto;
+}
+.form__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+.form__container__items {
+  display: flex;
+  width: 90%;
+}
+.form__container__todo {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+.form__container button {
+  border: none;
+  background-color: transparent;
+}
+
+.items-circle {
+  border: 1px solid #ddd;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 25px;
+  height: 22.5px;
+  margin-right: 1rem;
+}
+
+/*
+  Items container
+*/
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 1rem auto;
+  background-color: hsl(0deg, 0%, 98%);
+  border-radius: 0.4rem;
+}
+.items__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.items__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0;
+  color: hsl(236deg, 9%, 61%);
+}
+.items__footer__lefts {
+  margin-left: 1rem;
+}
+.items__footer__clear {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+/*
+  Each individual todo styles
+*/
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.45rem 0;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.item__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+}
+.item__container__checked {
+  cursor: pointer;
+}
+.item__container__item {
+  font-size: 1rem;
+  color: hsl(235deg, 19%, 35%);
+}
+.item button {
+  border: none;
+  background-color: transparent;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.completed {
+  background: linear-gradient hsl(192deg, 100%, 67%) to hsl(280deg, 87%, 65%);
+  background-image: url("../images/icon-check.svg");
+}
+
+/*
+  Filter Box
+*/
+.filterbox {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(0deg, 0%, 98%);
+  width: 90%;
+  margin: 1.5rem auto;
+  padding: 1rem 0;
+  border-radius: 0.4rem;
+}
+.filterbox p {
+  font-weight: 700;
+  color: hsl(236deg, 9%, 61%);
+  cursor: pointer;
+}
+.filterbox p.active {
+  color: hsl(220deg, 98%, 61%);
+}
+.filterbox > *:not(:last-child) {
+  margin-right: 1.85rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: hsl(236deg, 9%, 61%);
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 3.75rem;
+}
+
+/*# sourceMappingURL=style.css.map */
