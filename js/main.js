@@ -1,6 +1,7 @@
 //importar de nuestro modulos
-import Items from "../modulos js/add-remove.js";
-import ToDoItem from "../modulos js/item-constructor.js";
+import Items from "./modulos js/add-remove.js";
+import ToDoItem from "./modulos js/item-constructor.js";
+import LocalStorage from "./modulos js/Local-storage.js";
 //constantes iniciales  
 const main = document.getElementById('todo-item');
 const form = document.getElementById('form');
@@ -8,6 +9,10 @@ const form = document.getElementById('form');
 const inputDescription = document.getElementById('todo-item');
 
 const itemsContainer =document.getElementById('todo-cont');
+
+//llamar data si existe  encuanto cargue la pagina 
+
+Items.displayItems();
 
 //evento de escucha de la forma
 form.addEventListener('submit', (e) => {
@@ -29,6 +34,9 @@ if(e.key === 'Enter' && description != '') {
     // Agrear un nuevo todo
     Items.addItem(item);
 
+    //agregarlo al local Storage
+    LocalStorage.addItem(item);
+
     // Limpiar la input
     Items.clearInput();
   }
@@ -39,6 +47,9 @@ itemsContainer.addEventListener('click', (e) => {
     // Remover Elemento
     if(e.target.classList.contains('remove')){
       Items.removeItem(e.target);
+      LocalStorage.removeItem(
+        e.target.parentElement.previousElementSibling.lastElementChild.textContent,
+        );  
     }
   });
 
