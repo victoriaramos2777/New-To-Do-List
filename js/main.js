@@ -10,6 +10,8 @@ const inputDescription = document.getElementById('todo-item');
 
 const itemsContainer =document.getElementById('todo-cont');
 
+//constante para estilo del icono 
+
 //llamar data si existe  encuanto cargue la pagina 
 
 Items.displayItems();
@@ -53,3 +55,12 @@ itemsContainer.addEventListener('click', (e) => {
     }
   });
 
+
+  
+//evento de escucha para el icono
+
+
+
+
+   
+   

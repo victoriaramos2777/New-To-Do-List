@@ -143,7 +143,6 @@ body {
 }
 
 .completed {
-  background: linear-gradient hsl(192deg, 100%, 67%) to hsl(280deg, 87%, 65%);
   background-image: url("../images/icon-check.svg");
 }
 
@@ -159,25 +158,37 @@ body {
   padding: 1rem 0;
   border-radius: 0.4rem;
 }
+.filterbox__filters {
+  cursor: pointer;
+}
 .filterbox p {
   font-weight: 700;
   color: hsl(236deg, 9%, 61%);
   cursor: pointer;
 }
-.filterbox p.active {
-  color: hsl(220deg, 98%, 61%);
-}
 .filterbox > *:not(:last-child) {
   margin-right: 1.85rem;
 }
 
+.filterbox__filters:hover {
+  color: hsl(220deg, 98%, 61%);
+}
+
 .footer {
-  display: flex;
-  justify-content: center;
   color: hsl(236deg, 9%, 61%);
   font-weight: 400;
   font-size: 1.2rem;
   margin-top: 3.75rem;
+}
+
+.items-circle {
+  background: linear-gradient(hsl(192deg, 100%, 67%), hsl(280deg, 87%, 65%));
+}
+
+.items-circle img {
+  transform: scale(1) !important;
+  margin-left: 0.5em;
+  margin-top: 0.4em;
 }
 
 /*# sourceMappingURL=style.css.map */

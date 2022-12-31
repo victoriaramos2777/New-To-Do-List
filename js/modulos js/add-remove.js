@@ -16,7 +16,7 @@ class Items {
 
     todoDiv.innerHTML = `
         <div class="item__container">
-          <div id="check-holder" class="item__container__checked items-circle" title=${item.completed}></div>
+           <div id="check-holder" class="item__container__checked items-circle" title=${item.completed}><img src="./assets/images/icon-check.svg" alt = "icono de check"></div>
           <p class="item__container__item">${item.description}</p>
         </div>
         <button type="submit" id=${item.index}><img src="./assets/images/icon-cross.svg" alt="Icono de una X" class="remove"></button>
@@ -33,6 +33,11 @@ class Items {
     inputDescription.value = '';
 
   }
+
+  
+  
 }
+
+
 
 export default Items;
